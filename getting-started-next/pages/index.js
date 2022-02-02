@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '../src/components/Link'
 
 
+
 function Title({ children, as }) {
   const Tag = as;
   return (
@@ -10,7 +11,6 @@ function Title({ children, as }) {
       <style jsx>{`
         ${Tag} {
           color: red;
-          font-family: sans-serif;
         }
       `}</style>
     </React.Fragment>
