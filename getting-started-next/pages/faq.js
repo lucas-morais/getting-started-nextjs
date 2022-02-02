@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import {useEffect, useState} from 'react';
 import Link from "../src/components/Link"
 
@@ -22,15 +23,12 @@ export async function getStaticProps() {
 
 
 export default function FAQPage({ faq }) {
-  // const [faq, setFaq] = useState([]);
-
-  // useEffect(() =>{
-    
-
-
-  // }, [])
+ 
   return(
     <div>
+      <Head>
+        <title>FAQ - Alura Cases</title>
+      </Head>
       <h1>Alura Cases - FAQ</h1>
       <Link  href="/" passHref>
         Ir para a home
